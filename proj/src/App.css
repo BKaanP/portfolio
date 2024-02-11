@@ -1,38 +1,99 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+
+.Base {
+  background-color: #000000;
+}
+.Root {
+  border-style: none solid;
+  border-color: #a4a4a4;
+  border-width: 0.5px;
+  background-color: #4b4a4a;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.Navbar {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4e4e7;
+  font-family: "Titillium Web";
+  text-transform: uppercase;
   text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: sticky;
+  top: 0;
+}
+.Navbar-hidden {
+  top: -100px;
+}
+.Navbar-section {
+  color: #e4e4e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(39, 39, 42, 0.9);
+  padding: 0px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
+.Navbar-container {
+  display: flex;
+  gap: 20px;
+}
+.Navbar-container {
+  color: #e4e4e7;
+  text-decoration: none;
+  padding: 15px 15px;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+
+.Navbar-container:hover::after,
+.Navbar-container.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 80%;
+  height: 2px;
+  background-color: #00ffcc;
+}
+
+.Navbar-container:hover,
+.Navbar-container.active {
+  color: #00ffcc;
+}
+
+.App {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  height: 10vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start, keeping the logo on the left on smaller screens */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Navbar-logo {
+    margin-right: 0; /* Removes the right margin on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+  .Navbar-section {
+    padding-top: 10px; /* Adds some space above the section when stacked */
   }
 }
