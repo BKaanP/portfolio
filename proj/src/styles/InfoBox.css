@@ -1,0 +1,98 @@
+.info-box {
+  max-height: 150px;
+  transition: max-height 0.4s ease-in-out;
+  cursor: pointer;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "job img"
+    "name img"
+    "details details"
+    "date date";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  background: var(--border-color);
+  padding: 30px;
+  overflow: hidden;
+}
+
+.info-box.expanded {
+  max-height: 500px;
+}
+.info-box h2 {
+  grid-area: job;
+}
+
+.info-box h3 {
+  grid-area: name;
+}
+
+.info-box p {
+  grid-area: date;
+  font-size: 14px;
+}
+
+.InfoBox-img {
+  grid-area: img;
+  justify-self: end;
+  align-self: start;
+  height: 30px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.info3 {
+  grid-area: details;
+}
+.info-box .details {
+  grid-area: details;
+  overflow: hidden;
+  max-height: 0;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Consistent transition speed */
+  opacity: 0;
+}
+
+.info-box:hover .details,
+.info-box.expanded .details {
+  max-height: 500px; /* Adjust this to fit your content */
+  opacity: 1;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.info-box h2,
+.info-box h3 {
+  margin: 0;
+  color: var(--text-color);
+}
+
+h3 {
+  font-size: 14px;
+}
+
+.info-box ul {
+  padding-left: 1em;
+  padding-top: 1em;
+  /* margin: 2px; */
+  list-style: disc;
+}
+
+.info-box:hover {
+  background-color: var(--box-hover-color);
+}
+
+.highlight-current {
+  color: var(--highlight-color);
+}
+
+.info-box span {
+  grid-area: date;
+}

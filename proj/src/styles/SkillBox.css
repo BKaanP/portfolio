@@ -1,0 +1,77 @@
+.skill-box {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 1rem;
+}
+
+.skill-box-item {
+  background: var(--border-color);
+  border-radius: 1rem;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "img name"
+    "img desc"
+    "bonus bonus";
+}
+.skill-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-box img {
+  width: 40px;
+  margin-right: 10px;
+  grid-area: img;
+  align-self: center;
+}
+
+.skill-box strong {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: var(--text-color);
+  grid-area: name;
+}
+
+.skill-box p {
+  font-size: 0.9em;
+  margin: 0;
+  grid-area: desc;
+}
+
+.skill-box-item:hover {
+  background-color: var(--box-hover-color);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.skill-link-icon {
+  grid-area: bonus;
+  justify-self: end;
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+.skill-box-item:hover .skill-link-icon {
+  color: var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+  .skill-box {
+    padding: 0;
+  }
+}

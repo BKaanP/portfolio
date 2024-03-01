@@ -1,47 +1,33 @@
-Site built:
+todo:
 
-1. Navbar:
+General:
 
-- Logo
-- Home
-- Portfolio/Work Samples
-- Resume
-- Contact
+- change h1 font
 
-2. Pages:
+Navbar:
 
-Homepage:
+Goals:
 
-- picture of me
-- introduction
-- professional background(education, work experience, relevant personal projects)
-- skills(visiual representation, projects I have done with programming language?, timeline?)
+- goals timeline
 
-Portfolio/Work Samples:
+Project:
 
-- pictures of projects
-- quick intro what it is
-- what my role was
-- technologies used (visiualize with logos or text?both?)
-- link to repo or site if applicable
+- seach bar "x" button to remove input instantly
+- Search bar java & javascript unterschied wenn man über skills sucht
+- add filter blocks
+- item layout optimization
 
-Resume:
+Skills:
 
-- Just make it a downloadable button with arrow facing down
+Work Experience:
 
-Contact:
+Footer:
 
-- maybe put at bottom of homepage?
-- E-Mail
-- telefone?
-- no address
-- linkedin
+- Footer paths
 
-3. Design
+Intro:
 
-- highlight navbar position
-- dark colors(dark blue, bright green or purple?, white for text)
+Optimization:
 
-4. Usablility
-
-- mobile responsiveness
+- set static page colors
+- set dynamic size values

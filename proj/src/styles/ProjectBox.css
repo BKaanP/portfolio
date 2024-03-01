@@ -1,0 +1,128 @@
+.project-box {
+  transition: max-height 0.4s ease-in-out;
+  cursor: pointer;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "name img"
+    "company img"
+    "details details"
+    "date tag";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  background: var(--border-color);
+  padding: 30px;
+  overflow: hidden;
+}
+
+.project-box h2 {
+  grid-area: name;
+  color: var(--text-color);
+}
+.project-box h3 {
+  grid-area: company;
+  color: var(--text-color);
+}
+.project-box .project-box-img {
+  grid-area: img;
+  justify-self: end;
+  align-self: start;
+  height: 30px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.project-box .details {
+  grid-area: details;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
+  padding: 0 10px;
+}
+.project-box .details li {
+  list-style-position: outside;
+  text-indent: -1.45em;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+
+.project-box.expanded .details {
+  opacity: 1;
+  padding: 10px 40px;
+}
+
+.project-box .date {
+  grid-area: date;
+}
+
+.project-box:hover {
+  background-color: var(--box-hover-color);
+  box-shadow: 0 8px 16px 0 var(--box-shadow-color);
+}
+
+.project-box-img:hover {
+  transform: scale(1.1);
+}
+.project-box {
+  box-shadow: 0 4px 8px 0 var(--box-shadow-color);
+}
+
+.project-box .details li {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-box {
+    grid-template-areas:
+      "name name"
+      "company company"
+      "img img"
+      "details details"
+      "date tag";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 15px;
+  }
+
+  .project-box .project-box-img {
+    justify-self: center;
+    height: auto;
+    max-height: 30px;
+    width: 100%;
+    object-fit: contain;
+    margin: 10px 0;
+  }
+
+  .project-box.expanded .details {
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .project-box {
+    grid-template-areas:
+      "name img"
+      "company img"
+      "details details"
+      "date tag";
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    padding: 20px;
+  }
+
+  .project-box .project-box-img {
+    justify-self: end;
+    height: 50px; /* Adjust based on your design preference */
+    width: auto; /* Adjust if you have a specific width in mind */
+    object-fit: contain;
+    margin: 0 20px 0 0;
+  }
+
+  .project-box.expanded .details {
+    padding: 10px 25px; /* Slightly larger padding for readability */
+  }
+}
