@@ -4,23 +4,9 @@ import ProjectBox from "./ProjectBox";
 
 const initialProjects = [
   {
-    name: "Enhanced Customer Service Chatbot",
-    languages: "OpenAi, PhP, Vector DB, WordPress",
-    date: "2023",
-    details: [
-      "Developed an intelligent chatbot leveraging OpenAI's GPT-3.5 to provide dynamic, real-time customer service responses.",
-      "Integrated the chatbot into WordPress using PHP, facilitating seamless user interaction directly on the website.",
-      "Employed a Vector Database for storing and retrieving structured Q&A pairs, enabling the chatbot to learn and improve over time.",
-      "Used MongoDB for tracking interactions and analyzing the message history for continuous improvement of response accuracy.",
-      "Designed the user interface and an operational dashboard with Figma, focusing on usability and aesthetics to enhance user experience.",
-    ],
-    img: "/greenair-logo.png",
-    tags: "bla",
-  },
-  {
     name: "Interactive CV Portfolio Site",
     languages: "React, HTML, JavaScript, CSS, Node.js, npm, Git",
-    date: "2023",
+    date: "2024",
     details: [
       "Built a responsive and interactive portfolio website using React, showcasing my curriculum vitae, project works, and technical skills.",
       "Implemented advanced web development techniques with HTML, JavaScript, and CSS for a modern and engaging user interface.",
@@ -31,6 +17,21 @@ const initialProjects = [
     tags: "bla",
   },
   {
+    name: "Enhanced Customer Service Chatbot",
+    languages: "OpenAi, PhP, Vector DB, WordPress",
+    date: "2023",
+    details: [
+      "Developed an intelligent chatbot leveraging OpenAI's GPT-3.5 to provide dynamic, real-time customer service responses.",
+      "Integrated the chatbot into WordPress using PHP, facilitating seamless user interaction directly on the website.",
+      "Employed a Vector Database for storing and retrieving structured Q&A pairs, enabling the chatbot to learn and improve over time.",
+      "Used MongoDB for tracking interactions and analyzing the message history for continuous improvement of response accuracy.",
+      "Designed the user interface and an operational dashboard with Figma, focusing on usability and aesthetics to enhance user experience.",
+    ],
+    img: "greenair-logo.png",
+    tags: "bla",
+  },
+
+  {
     name: "Intelligent Filename Organizer",
     languages: "Python",
     date: "2023",
@@ -39,7 +40,7 @@ const initialProjects = [
       "Compared file names against a predefined list in an Excel spreadsheet, identifying and resolving naming discrepancies and redundancies.",
       "Enhanced file system organization by automatically categorizing files into separate directories based on predefined criteria, improving accessibility and management.",
     ],
-    img: "/greenair-logo.png",
+    img: "greenair-logo.png",
     tags: "bla",
   },
   {
@@ -53,7 +54,7 @@ const initialProjects = [
       "Integrated with Idealo's API for real-time product data, ensuring recommendations are up-to-date and relevant.",
       "Packaged and optimized the extension using Webpack, ensuring efficient performance across various web environments.",
     ],
-    img: "/idealo-logo.png",
+    img: "idealo-logo.png",
     tags: "bla",
   },
   {
@@ -67,7 +68,7 @@ const initialProjects = [
       "Integrated MongoDB for data storage, enabling efficient management of product listings, user profiles, and transaction histories.",
       "Developed RESTful API services with Node.js for seamless front-end to back-end data communication, ensuring smooth and reliable app functionality.",
     ],
-    img: "/htw-logo.png",
+    img: "htw-logo.png",
     tags: "bla",
   },
   {
@@ -79,7 +80,7 @@ const initialProjects = [
       "Applied advanced problem-solving techniques and algorithm optimization to efficiently find all possible solutions.",
       "Showcased the use of recursive algorithms and backtracking techniques, emphasizing logical thinking and algorithmic efficiency.",
     ],
-    img: "/htw-logo.png",
+    img: "htw-logo.png",
     tags: "bla",
   },
   {
@@ -91,7 +92,7 @@ const initialProjects = [
       "Implemented a stack-based approach to accurately compute mathematical expressions, ensuring robust and error-free calculations.",
       "Designed the calculator to support various operators and functions, making it a versatile tool for mathematical problem-solving.",
     ],
-    img: "/htw-logo.png",
+    img: "htw-logo.png",
     tags: "bla",
   },
   {
@@ -102,7 +103,7 @@ const initialProjects = [
       "Crafted a Java application to generate the Sierpinski Triangle, a fractal constructed from repeatedly subdividing equilateral triangles into smaller ones.",
       "Utilized recursive programming methods to efficiently render the fractal pattern, demonstrating the power of recursion in graphical rendering.",
     ],
-    img: "/htw-logo.png",
+    img: "htw-logo.png",
     tags: "bla",
   },
   {
@@ -114,7 +115,7 @@ const initialProjects = [
       "Designed the application to process textual data representing the BVG's routes, stops, and connections, providing users with the most efficient travel options.",
       "Incorporated user-friendly inputs and outputs to make the algorithm accessible for practical use, enhancing the commuting experience in Berlin.",
     ],
-    img: "/htw-logo.png",
+    img: "htw-logo.png",
     tags: "bla",
   },
 ];

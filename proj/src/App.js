@@ -15,7 +15,7 @@ function App() {
     ],
     date: "10.2023 - current",
     name: "HTW Berlin",
-    img: "/htw-logo.png",
+    img: "htw-logo.png",
   };
 
   const info2 = {
@@ -28,7 +28,7 @@ function App() {
     ],
     date: "3.2023 - 8.2023",
     name: "GreenAir GmbH",
-    img: "/greenair-logo.png",
+    img: "greenair-logo.png",
   };
 
   const info3 = {
@@ -41,62 +41,62 @@ function App() {
     ],
     date: "2020 - 2021",
     name: "Virtusa Corp.",
-    img: "/virtusa-logo.png",
+    img: "virtusa-logo.png",
   };
 
   const skills = [
     {
       id: 1,
       name: "JavaScript",
-      icon: "/js.png",
+      icon: "js.png",
       expertise: "Advanced",
     },
     {
       id: 2,
       name: "CSS",
-      icon: "/css.png",
+      icon: "css.png",
       expertise: "Advanced",
     },
     {
       id: 3,
       name: "Java",
-      icon: "/java.png",
+      icon: "java.png",
       expertise: "Advanced",
     },
     {
       id: 4,
       name: "Git",
-      icon: "/git.png",
+      icon: "git.png",
       expertise: "Advanced",
     },
     {
       id: 5,
       name: "html",
-      icon: "/html.png",
+      icon: "html.png",
       expertise: "Advanced",
     },
     {
       id: 6,
       name: "MongoDB",
-      icon: "/mongodb-icon-1.svg",
+      icon: "mongodb-icon-1.svg",
       expertise: "Advanced",
     },
     {
       id: 7,
       name: "MySql",
-      icon: "/mysql.svg",
+      icon: "mysql.svg",
       expertise: "Advanced",
     },
     {
       id: 8,
       name: "Python",
-      icon: "/py.png",
+      icon: "py.png",
       expertise: "Advanced",
     },
     {
       id: 9,
       name: "React",
-      icon: "/react.png",
+      icon: "react.png",
       expertise: "Advanced",
     },
   ];
@@ -104,37 +104,37 @@ function App() {
   const programmingLanguages = [
     {
       name: "Java",
-      logo: "/java.png",
+      logo: "java.png",
       description:
         "Skilled in Java for enterprise-grade applications, emphasizing OOP, clean code, and design patterns.",
     },
     {
       name: "CSS",
-      logo: "/css.png",
+      logo: "css.png",
       description:
         "Experienced in crafting responsive and visually appealing designs with CSS, including frameworks like Bootstrap.",
     },
     {
       name: "JavaScript",
-      logo: "/js.png",
+      logo: "js.png",
       description:
         "Proficient in JavaScript, focusing on both front-end interactivity and server-side logic with Node.js.",
     },
     {
       name: "HTML",
-      logo: "/html.png",
+      logo: "html.png",
       description:
         "Well-versed in HTML5, ensuring semantic markup and accessibility standards are always met.",
     },
     {
       name: "Python",
-      logo: "/py.png",
+      logo: "py.png",
       description:
         "Adept in Python for data science and backend development, with a strong grasp on AI and machine learning libraries.",
     },
     {
       name: "React",
-      logo: "/react.png",
+      logo: "react.png",
       description:
         "Expert in React for building dynamic, high-performance single-page applications with a focus on UX.",
     },
@@ -143,19 +143,19 @@ function App() {
   const tools = [
     {
       name: "OpenAI",
-      logo: "/openai.png",
+      logo: "openai.png",
       description:
         "Experience integrating OpenAI APIs to enhance application intelligence and automate responses.",
     },
     {
       name: "Figma",
-      logo: "/figma.webp",
+      logo: "figma.webp",
       description:
         "Proficient with Figma for UI/UX design, creating interactive prototypes and collaborating with teams.",
     },
     {
       name: "Git",
-      logo: "/git.png",
+      logo: "git.png",
       description:
         "Expert in using Git for version control, ensuring smooth workflow and code management in team projects.",
     },
@@ -164,19 +164,19 @@ function App() {
   const databases = [
     {
       name: "MongoDB",
-      logo: "/mongodb-icon-1.svg",
+      logo: "mongodb-icon-1.svg",
       description:
         "Experienced with MongoDB for developing high-performance, schema-less database solutions.",
     },
     {
       name: "MySql",
-      logo: "/mysql.svg",
+      logo: "mysql.svg",
       description:
         "Proficient in MySQL for robust database design, optimization, and complex query formulation.",
     },
     {
       name: "Weaviate",
-      logo: "/weaviate.png",
+      logo: "weaviate.png",
       description:
         "Familiar with Weaviate, an innovative vector database for building AI-driven applications.",
     },
